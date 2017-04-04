@@ -7,8 +7,4 @@
 # NOTE: if the rank-name cannot be found in admin_ranks.txt, they will not be adminned! ~Carn #
 # NOTE: syntax was changed to allow hyphenation of ranknames, since spaces are stripped.      #
 ###############################################################################################
-monster860 = Game Master
-duncandelano = Game Master
-ecolli = Game Master
-crazypilot = Game Master
-vivalas = Coder
+aflacom = Host
