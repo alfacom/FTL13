@@ -5250,8 +5250,8 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/break_room)
@@ -5259,7 +5259,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
+	dir = 2
+	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/break_room)
 "jvT" = (
@@ -5928,6 +5930,9 @@
 	dir = 4;
 	icon_state = "pipe-j2"
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
 "kxt" = (
@@ -6215,6 +6220,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 1
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
@@ -11620,10 +11628,6 @@
 /obj/item/weapon/stock_parts/scanning_module,
 /obj/item/weapon/stock_parts/console_screen,
 /obj/item/weapon/stock_parts/capacitor,
-/obj/machinery/camera{
-	c_tag = "Tech Storage";
-	dir = 1
-	},
 /obj/machinery/status_display{
 	pixel_y = -32
 	},
@@ -14009,9 +14013,6 @@
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/crew_quarters/locker)
 "xRg" = (
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
-	dir = 4
-	},
 /obj/machinery/camera{
 	c_tag = "Engineering Hallway South";
 	dir = 8
@@ -14030,7 +14031,6 @@
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/bridge)
 "xUf" = (
-/turf/open/space,
 /turf/open/space,
 /turf/closed/wall/shuttle{
 	icon_state = "swall_f9";
@@ -14956,7 +14956,6 @@
 /turf/open/floor/plating,
 /area/shuttle/ftl/crew_quarters/locker)
 "zMs" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/vending/cola,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/engine/break_room)
@@ -16034,9 +16033,6 @@
 	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/disposalpipe/segment{
@@ -17703,6 +17699,9 @@
 	dir = 8;
 	icon_state = "pipe-j2"
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 1
+	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/starboard)
 "EFC" = (
@@ -18355,9 +18354,6 @@
 "FBB" = (
 /obj/structure/closet/radiation,
 /obj/item/clothing/glasses/meson,
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
-	dir = 8
-	},
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -20358,7 +20354,7 @@
 	tag = "munitions west"
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/plasteel/black,
 /area/shuttle/ftl/munitions)
@@ -23188,10 +23184,8 @@
 	icon_state = "1-2";
 	pixel_y = 0
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 2
-	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/manifold4w/supply/hidden,
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
 "Ooy" = (
@@ -29743,6 +29737,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/ftl/hallway/primary/port)
+"ZZO" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 1
+	},
+/turf/open/floor/plasteel,
+/area/shuttle/ftl/hallway/primary/starboard)
 "ZZP" = (
 /obj/structure/chair/office{
 	dir = 8
@@ -54302,10 +54306,10 @@ bjR
 eHQ
 DON
 jul
-aeQ
+amg
 FBB
 xRg
-TBO
+gJl
 zMs
 AVG
 oMq
@@ -60224,9 +60228,9 @@ Ajg
 CwQ
 PUd
 iIh
-OOH
+tNs
 EBW
-Kuu
+ZZO
 DEA
 FCC
 MNm
@@ -61946,7 +61950,6 @@ Kky
 Kky
 Kky
 Kky
-Zwv
 Kky
 Kky
 Kky
@@ -61954,7 +61957,8 @@ Kky
 Kky
 Kky
 Kky
-Zwv
+Kky
+Kky
 Kky
 Kky
 Kky
@@ -62715,7 +62719,6 @@ Kky
 Kky
 Kky
 Kky
-Zwv
 Kky
 Kky
 Kky
@@ -62727,7 +62730,8 @@ Kky
 Kky
 Kky
 Kky
-Zwv
+Kky
+Kky
 Kky
 Kky
 Kky
@@ -62760,7 +62764,7 @@ Pwf
 vkQ
 FlV
 nIC
-sQW
+Sjm
 hny
 vVC
 vxK
@@ -66313,7 +66317,6 @@ Kky
 Kky
 Kky
 Kky
-Zwv
 Kky
 Kky
 Kky
@@ -66325,7 +66328,8 @@ Kky
 Kky
 Kky
 Kky
-Zwv
+Kky
+Kky
 Kky
 Kky
 Kky
@@ -66652,7 +66656,7 @@ CtY
 ndK
 zZi
 Umf
-JfS
+gzo
 oeK
 mQx
 mQx
@@ -67344,13 +67348,13 @@ Kky
 Kky
 Kky
 Kky
-Zwv
 Kky
 Kky
 Kky
 Kky
 Kky
-Zwv
+Kky
+Kky
 Kky
 Kky
 Kky
@@ -67377,7 +67381,7 @@ toK
 toK
 NVL
 toK
-OER
+IeB
 vXg
 vXg
 vXg
@@ -69940,7 +69944,7 @@ Kky
 Kky
 Kky
 toK
-LFx
+toK
 toK
 toK
 toK
@@ -71997,7 +72001,7 @@ Kky
 Kky
 toK
 toK
-LFx
+toK
 toK
 toK
 toK
@@ -72273,7 +72277,7 @@ WSe
 oEq
 vVC
 vxK
-oCP
+dyJ
 brY
 SVS
 sod
