@@ -96,7 +96,7 @@
 		updatehealth()
 		visible_message("<span class='danger'>[M.name] has hit [src]!</span>", \
 						"<span class='userdanger'>[M.name] has hit [src]!</span>")
-		add_logs(M.occupant, src, "attacked", M, "(INTENT: [uppertext(M.occupant.a_intent)]) (DAMTYPE: [uppertext(M.damtype)])")
+		add_logs(M.occupant, src, "attacked", M, "(INTENT: [ruppertext(M.occupant.a_intent)]) (DAMTYPE: [ruppertext(M.damtype)])")
 	else
 		step_away(src,M)
 		add_logs(M.occupant, src, "pushed", M)

@@ -168,7 +168,7 @@
 	if(src)
 		src.input_tag = "[S]_in"
 		src.output_tag = "[S]_out"
-		name = "[uppertext(S)] Supply Control"
+		name = "[ruppertext(S)] Supply Control"
 		var/list/new_devices = freq.devices["4"]
 		for(var/obj/machinery/air_sensor/U in new_devices)
 			var/list/text = splittext(U.id_tag, "_")

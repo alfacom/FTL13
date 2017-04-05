@@ -100,7 +100,7 @@
 
 //Turns text into proper directions
 /proc/text2dir(direction)
-	switch(uppertext(direction))
+	switch(ruppertext(direction))
 		if("NORTH")
 			return 1
 		if("SOUTH")
@@ -352,7 +352,7 @@ for(var/t in test_times)
 // A copy of text2dir, extended to accept one and two letter
 //  directions, and to clearly return 0 otherwise.
 /proc/text2dir_extended(direction)
-	switch(uppertext(direction))
+	switch(ruppertext(direction))
 		if("NORTH", "N")
 			return 1
 		if("SOUTH", "S")

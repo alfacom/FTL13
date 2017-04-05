@@ -3,5 +3,5 @@
 		if (speaker in Friends)
 			speech_buffer = list()
 			speech_buffer += speaker
-			speech_buffer += lowertext(html_decode(message))
+			speech_buffer += rlowertext(rhtml_decode(message))
 	..()

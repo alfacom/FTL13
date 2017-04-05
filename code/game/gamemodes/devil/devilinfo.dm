@@ -97,11 +97,11 @@ var/global/list/lawlorify = list (
 	return devil
 
 /proc/devilInfo(name, saveDetails = 0)
-	if(allDevils[lowertext(name)])
-		return allDevils[lowertext(name)]
+	if(allDevils[rlowertext(name)])
+		return allDevils[rlowertext(name)]
 	else
 		var/datum/devilinfo/devil = randomDevilInfo(name)
-		allDevils[lowertext(name)] = devil
+		allDevils[rlowertext(name)] = devil
 		devil.exists = saveDetails
 		return devil
 

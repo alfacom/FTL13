@@ -91,7 +91,7 @@
 			return "delta"
 
 /proc/seclevel2num(seclevel)
-	switch( lowertext(seclevel) )
+	switch( rlowertext(seclevel) )
 		if("green")
 			return SEC_LEVEL_GREEN
 		if("amber")
@@ -102,7 +102,7 @@
 			return SEC_LEVEL_DELTA
 
 /proc/play_level_sound(seclevel)
-	switch(lowertext(seclevel))
+	switch(rlowertext(seclevel))
 		if("general quarters")
 			return 'sound/effects/purge_siren.ogg'
 		if("delta")

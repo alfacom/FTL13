@@ -11,7 +11,7 @@
 /mob/living/simple_animal/drone/activate_hand(selhand)
 
 	if(istext(selhand))
-		selhand = lowertext(selhand)
+		selhand = rlowertext(selhand)
 
 		if(selhand == "right" || selhand == "r")
 			selhand = 0

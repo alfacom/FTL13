@@ -13,7 +13,7 @@
 	for(var/mob/M in player_list)
 		if(M.binarycheck())
 			if(istype(M, /mob/living/silicon/ai))
-				var/renderedAI = "<i><span class='game say'>Robotic Talk, <a href='?src=\ref[M];track=[html_encode(name)]'><span class='name'>[name] ([desig])</span></a> <span class='message'>[message_a]</span></span></i>"
+				var/renderedAI = "<i><span class='game say'>Robotic Talk, <a href='?src=\ref[M];track=[rhtml_encode(name)]'><span class='name'>[name] ([desig])</span></a> <span class='message'>[message_a]</span></span></i>"
 				M << renderedAI
 			else
 				M << rendered

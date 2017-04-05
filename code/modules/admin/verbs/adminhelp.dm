@@ -36,7 +36,7 @@
 	var/list/jobs = list()
 	var/list/job_count = list()
 	for(var/datum/mind/M in ticker.minds)
-		var/T = lowertext(M.assigned_role)
+		var/T = rlowertext(M.assigned_role)
 		jobs[T] = M.current
 		job_count[T]++ //count how many of this job was found so we only show link for singular jobs
 
@@ -56,7 +56,7 @@
 						if(!found)
 							found = forenames[word]
 					if(!found)
-						var/T = lowertext(original_word)
+						var/T = rlowertext(original_word)
 						if(T == "cap") T = "captain"
 						if(T == "hop") T = "head of personnel"
 						if(T == "cmo") T = "chief medical officer"
@@ -114,7 +114,7 @@
 	var/list/jobs = list()
 	var/list/job_count = list()
 	for(var/datum/mind/M in ticker.minds)
-		var/T = lowertext(M.assigned_role)
+		var/T = rlowertext(M.assigned_role)
 		jobs[T] = M.current
 		job_count[T]++ //count how many of this job was found so we only show link for singular jobs
 
@@ -134,7 +134,7 @@
 						if(!found)
 							found = forenames[word]
 					if(!found)
-						var/T = lowertext(original_word)
+						var/T = rlowertext(original_word)
 						if(T == "cap") T = "captain"
 						if(T == "hop") T = "head of personnel"
 						if(T == "cmo") T = "chief medical officer"

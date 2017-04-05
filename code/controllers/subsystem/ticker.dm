@@ -503,7 +503,7 @@ var/datum/subsystem/ticker/ticker
 
 	if(m)
 		world << "<font color='purple'><b>Tip of the round: \
-			</b>[html_encode(m)]</font>"
+			</b>[rhtml_encode(m)]</font>"
 
 /datum/subsystem/ticker/proc/check_queue()
 	if(!queued_players.len || !config.hard_popcap)

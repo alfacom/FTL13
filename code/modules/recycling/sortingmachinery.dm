@@ -23,7 +23,7 @@
 		var/obj/item/device/destTagger/O = W
 
 		if(sortTag != O.currTag)
-			var/tag = uppertext(TAGGERLOCATIONS[O.currTag])
+			var/tag = ruppertext(TAGGERLOCATIONS[O.currTag])
 			user << "<span class='notice'>*[tag]*</span>"
 			sortTag = O.currTag
 			playsound(loc, 'sound/machines/twobeep.ogg', 100, 1)
@@ -102,7 +102,7 @@
 		var/obj/item/device/destTagger/O = W
 
 		if(sortTag != O.currTag)
-			var/tag = uppertext(TAGGERLOCATIONS[O.currTag])
+			var/tag = ruppertext(TAGGERLOCATIONS[O.currTag])
 			user << "<span class='notice'>*[tag]*</span>"
 			sortTag = O.currTag
 			playsound(loc, 'sound/machines/twobeep.ogg', 100, 1)

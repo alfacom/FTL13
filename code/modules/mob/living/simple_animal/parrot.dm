@@ -147,7 +147,7 @@
 		if(!radio_freq || prob(10))
 			if(speech_buffer.len >= 500)
 				speech_buffer -= pick(speech_buffer)
-			speech_buffer |= html_decode(raw_message)
+			speech_buffer |= rhtml_decode(raw_message)
 	..()
 
 /mob/living/simple_animal/parrot/radio(message, message_mode, list/spans) //literally copied from human/radio(), but there's no other way to do this. at least it's better than it used to be.

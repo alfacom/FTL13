@@ -581,7 +581,7 @@
 	if(!dextrous)
 		return ..()
 	if(istext(selhand))
-		selhand = lowertext(selhand)
+		selhand = rlowertext(selhand)
 		if(selhand == "right" || selhand == "r")
 			selhand = 0
 		if(selhand == "left" || selhand == "l")

@@ -40,7 +40,7 @@ Strip out?
 	if(H.client && H.client.prefs.custom_names["religion"])
 		new_religion = H.client.prefs.custom_names["religion"]
 
-	switch(lowertext(new_religion))
+	switch(rlowertext(new_religion))
 		if("christianity")
 			B.name = pick("The Holy Bible","The Dead Sea Scrolls")
 		if("satanism")

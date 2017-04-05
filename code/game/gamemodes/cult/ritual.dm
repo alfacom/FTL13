@@ -265,4 +265,4 @@ This file contains the arcane tome files.
 		if(S && !qdeleted(S))
 			qdel(S)
 	new rune_to_scribe(Turf, chosen_keyword)
-	user << "<span class='cult'>The [lowertext(initial(rune_to_scribe.cultist_name))] rune [initial(rune_to_scribe.cultist_desc)]</span>"
+	user << "<span class='cult'>The [rlowertext(initial(rune_to_scribe.cultist_name))] rune [initial(rune_to_scribe.cultist_desc)]</span>"

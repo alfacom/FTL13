@@ -17,7 +17,7 @@ var/list/emojis
 			pos = search
 			search = findtext(text, ":", pos+1)
 			if(search)
-				emoji = lowertext(copytext(text, pos+1, search))
+				emoji = rlowertext(copytext(text, pos+1, search))
 				if(emoji in emojis)
 					parsed += " <img class=icon src=\ref['icons/emoji.dmi'] iconstate='[emoji]'>"
 					pos = search + 1

@@ -255,7 +255,7 @@
 		/** REVOLUTION ***/
 		text = "revolution"
 		if (ticker.mode.config_tag=="revolution")
-			text = uppertext(text)
+			text = ruppertext(text)
 		text = "<i><b>[text]</b></i>: "
 		if (assigned_role in command_positions)
 			text += "<b>HEAD</b>|loyal|employee|headrev|rev"
@@ -293,7 +293,7 @@
 		/** GANG ***/
 		text = "gang"
 		if (ticker.mode.config_tag=="gang")
-			text = uppertext(text)
+			text = ruppertext(text)
 		text = "<i><b>[text]</b></i>: "
 		text += "[isloyal(current) ? "<B>LOYAL</B>" : "loyal"]|"
 		if(src in ticker.mode.get_all_gangsters())
@@ -334,7 +334,7 @@
 		/** CULT ***/
 		text = "cult"
 		if (ticker.mode.config_tag=="cult")
-			text = uppertext(text)
+			text = ruppertext(text)
 		text = "<i><b>[text]</b></i>: "
 		if (src in ticker.mode.cult)
 			text += "loyal|<a href='?src=\ref[src];cult=clear'>employee</a>|<b>CULTIST</b>"
@@ -358,7 +358,7 @@
 		/** CLOCKWORK CULT **/
 		text = "clockwork cult"
 		if(ticker.mode.config_tag == "clockwork cult")
-			text = uppertext(text)
+			text = ruppertext(text)
 		text = "<i><b>[text]</b></i>: "
 		if(src in ticker.mode.servants_of_ratvar)
 			text += "loyal|<a href='?src=\ref[src];clockcult=clear'>employee</a>|<b>SERVANT</b>"
@@ -378,7 +378,7 @@
 		/** WIZARD ***/
 		text = "wizard"
 		if (ticker.mode.config_tag=="wizard")
-			text = uppertext(text)
+			text = ruppertext(text)
 		text = "<i><b>[text]</b></i>: "
 		if ((src in ticker.mode.wizards) || (src in ticker.mode.apprentices))
 			text += "<b>YES</b>|<a href='?src=\ref[src];wizard=clear'>no</a>"
@@ -398,7 +398,7 @@
 		/** CHANGELING ***/
 		text = "changeling"
 		if (ticker.mode.config_tag=="changeling" || ticker.mode.config_tag=="traitorchan")
-			text = uppertext(text)
+			text = ruppertext(text)
 		text = "<i><b>[text]</b></i>: "
 		if ((src in ticker.mode.changelings) && special_role)
 			text += "<b>YES</b>|<a href='?src=\ref[src];changeling=clear'>no</a>"
@@ -428,7 +428,7 @@
 		/** NUCLEAR ***/
 		text = "nuclear"
 		if (ticker.mode.config_tag=="nuclear")
-			text = uppertext(text)
+			text = ruppertext(text)
 		text = "<i><b>[text]</b></i>: "
 		if (src in ticker.mode.syndicates)
 			text += "<b>OPERATIVE</b>|<a href='?src=\ref[src];nuclear=clear'>nanotrasen</a>"
@@ -453,7 +453,7 @@
 	/** TRAITOR ***/
 	text = "traitor"
 	if (ticker.mode.config_tag=="traitor" || ticker.mode.config_tag=="traitorchan")
-		text = uppertext(text)
+		text = ruppertext(text)
 	text = "<i><b>[text]</b></i>: "
 	if (src in ticker.mode.traitors)
 		text += "<b>TRAITOR</b>|<a href='?src=\ref[src];traitor=clear'>loyal</a>"
@@ -473,7 +473,7 @@
 
 	text = "Abductor"
 	if(ticker.mode.config_tag == "abductor")
-		text = uppertext(text)
+		text = ruppertext(text)
 	text = "<i><b>[text]</b></i>: "
 	if(src in ticker.mode.abductors)
 		text += "<b>Abductor</b>|<a href='?src=\ref[src];abductor=clear'>human</a>"
@@ -491,7 +491,7 @@
 	/** HAND OF GOD **/
 	text = "hand of god"
 	if(ticker.mode.config_tag == "handofgod")
-		text = uppertext(text)
+		text = ruppertext(text)
 	text = "<i><b>[text]</b></i>: "
 	if (src in ticker.mode.red_deities)
 		text += "<b>RED GOD</b>|<a href='?src=\ref[src];handofgod=red prophet'>red prophet</a>|<a href='?src=\ref[src];handofgod=red follower'>red follower</a>|<a href='?src=\ref[src];handofgod=clear'>employee</a>|<a href='?src=\ref[src];handofgod=blue god'>blue god</a>|<a href='?src=\ref[src];handofgod=blue prophet'>blue prophet</a>|<a href='?src=\ref[src];handofgod=blue follower'>blue follower</a>"
@@ -524,7 +524,7 @@
 	if (istype(current, /mob/living/carbon))
 		text = "monkey"
 		if (ticker.mode.config_tag=="monkey")
-			text = uppertext(text)
+			text = ruppertext(text)
 		text = "<i><b>[text]</b></i>: "
 		if (istype(current, /mob/living/carbon/human))
 			text += "<a href='?src=\ref[src];monkey=healthy'>healthy</a>|<a href='?src=\ref[src];monkey=infected'>infected</a>|<b>HUMAN</b>|other"
@@ -551,7 +551,7 @@
 	/** devil ***/
 	text = "devil"
 	if(ticker.mode.config_tag == "devil")
-		text = uppertext(text)
+		text = ruppertext(text)
 	text = "<i><b>[text]</b></i>: "
 	if(src in ticker.mode.devils)
 		text += "<b>DEVIL</b>|sintouched|<a href='?src=\ref[src];devil=clear'>human</a>"

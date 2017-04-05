@@ -332,5 +332,5 @@
 		return
 	visible_message("<span class='danger'>[M.name] has hit [src].</span>")
 	take_directional_damage(M.force, damtype, get_dir(src, M))
-	add_logs(M.occupant, src, "attacked", M, "(INTENT: [uppertext(M.occupant.a_intent)]) (DAMTYPE: [uppertext(M.damtype)])")
+	add_logs(M.occupant, src, "attacked", M, "(INTENT: [ruppertext(M.occupant.a_intent)]) (DAMTYPE: [ruppertext(M.damtype)])")
 	return

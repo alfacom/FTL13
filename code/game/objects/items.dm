@@ -458,7 +458,7 @@ obj/item/proc/item_action_slot_check(slot, mob/user)
 	else
 		M.take_organ_damage(7)
 
-	add_logs(user, M, "attacked", "[src.name]", "(INTENT: [uppertext(user.a_intent)])")
+	add_logs(user, M, "attacked", "[src.name]", "(INTENT: [ruppertext(user.a_intent)])")
 
 	M.adjust_blurriness(3)
 	M.adjust_eye_damage(rand(2,4))

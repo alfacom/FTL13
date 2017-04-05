@@ -253,7 +253,7 @@
 		user << "<b>No Material Detected!</b><br>"
 
 /obj/effect/blob/proc/typereport(mob/user)
-	user << "<b>Blob Type:</b> <span class='notice'>[uppertext(initial(name))]</span>"
+	user << "<b>Blob Type:</b> <span class='notice'>[ruppertext(initial(name))]</span>"
 	user << "<b>Health:</b> <span class='notice'>[health]/[maxhealth]</span>"
 	user << "<b>Effects:</b> <span class='notice'>[scannerreport()]</span>"
 

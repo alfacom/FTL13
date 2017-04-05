@@ -58,7 +58,7 @@
 					var/obj/item/organ/organ = item_to_retrive
 					if(organ.owner)
 						// If this code ever runs I will be happy
-						add_logs(L, organ.owner, "magically removed [organ.name] from", addition="INTENT: [uppertext(L.a_intent)]")
+						add_logs(L, organ.owner, "magically removed [organ.name] from", addition="INTENT: [ruppertext(L.a_intent)]")
 						organ.Remove(organ.owner)
 			else
 				while(!isturf(item_to_retrive.loc) && infinite_recursion < 10) //if it's in something you get the whole thing.

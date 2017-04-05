@@ -45,18 +45,18 @@
 
 /datum/stockMarket/proc/generateDesignation(var/name)
 	if (length(name) <= 4)
-		return uppertext(name)
+		return ruppertext(name)
 	var/list/w = splittext(name, " ")
 	if (w.len >= 2)
 		var/d = ""
 		for(var/i in 1 to min(5, w.len))
-			d += uppertext(ascii2text(text2ascii(w[i], 1)))
+			d += ruppertext(ascii2text(text2ascii(w[i], 1)))
 		return d
 	else
-		var/d = uppertext(ascii2text(text2ascii(name, 1)))
+		var/d = ruppertext(ascii2text(text2ascii(name, 1)))
 		for(var/i in 2 to length(name))
 			if (prob(100 / i))
-				d += uppertext(ascii2text(text2ascii(name, i)))
+				d += ruppertext(ascii2text(text2ascii(name, i)))
 		return d
 
 /datum/stockMarket/proc/generateStocks(var/amt = 15)

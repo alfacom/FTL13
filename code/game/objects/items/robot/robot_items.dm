@@ -18,7 +18,7 @@
 
 	M.visible_message("<span class='danger'>[user] has prodded [M] with [src]!</span>", \
 					"<span class='userdanger'>[user] has prodded you with [src]!</span>")
-	add_logs(user, M, "stunned", src, "(INTENT: [uppertext(user.a_intent)])")
+	add_logs(user, M, "stunned", src, "(INTENT: [ruppertext(user.a_intent)])")
 
 /obj/item/borg/cyborghug
 	name = "Hugging Module"

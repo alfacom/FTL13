@@ -2,7 +2,7 @@
 
 //is this shit even used at all
 /proc/NewStutter(phrase,stunned)
-	phrase = html_decode(phrase)
+	phrase = rhtml_decode(phrase)
 
 	var/list/split_phrase = splittext(phrase," ") //Split it up into words.
 
@@ -20,7 +20,7 @@
 		//Search for dipthongs (two letters that make one sound.)
 		var/first_sound = copytext(word,1,3)
 		var/first_letter = copytext(word,1,2)
-		if(lowertext(first_sound) in list("ch","th","sh"))
+		if(rlowertext(first_sound) in list("ch","th","sh"))
 			first_letter = first_sound
 
 		//Repeat the first letter to create a stutter.

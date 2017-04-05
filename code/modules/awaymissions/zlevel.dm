@@ -46,10 +46,10 @@ var/global/list/potentialRandomZlevels = generateMapList(filename = "config/away
 		var/name = null
 
 		if (pos)
-			name = lowertext(copytext(t, 1, pos))
+			name = rlowertext(copytext(t, 1, pos))
 
 		else
-			name = lowertext(t)
+			name = rlowertext(t)
 
 		if (!name)
 			continue

@@ -740,7 +740,7 @@
 		target.lastattacker = user
 		if(!target.attacked_by(src, user))
 			impaling = FALSE //if we got blocked, stop impaling
-		add_logs(user, target, "attacked", src.name, "(INTENT: [uppertext(user.a_intent)]) (DAMTYPE: [uppertext(damtype)])")
+		add_logs(user, target, "attacked", src.name, "(INTENT: [ruppertext(user.a_intent)]) (DAMTYPE: [ruppertext(damtype)])")
 		add_fingerprint(user)
 	else //todo yell at someone to make attack() use proper return values
 		..()

@@ -257,10 +257,10 @@ var/bot_ip
 		var/value = null
 
 		if(pos)
-			name = lowertext(copytext(t, 1, pos))
+			name = rlowertext(copytext(t, 1, pos))
 			value = copytext(t, pos + 1)
 		else
-			name = lowertext(t)
+			name = rlowertext(t)
 
 		if(!name)
 			continue
@@ -518,13 +518,13 @@ var/bot_ip
 				if("gateway_delay")
 					config.gateway_delay			= text2num(value)
 				if("continuous")
-					var/mode_name = lowertext(value)
+					var/mode_name = rlowertext(value)
 					if(mode_name in config.modes)
 						config.continuous[mode_name] = 1
 					else
 						diary << "Unknown continuous configuration definition: [mode_name]."
 				if("midround_antag")
-					var/mode_name = lowertext(value)
+					var/mode_name = rlowertext(value)
 					if(mode_name in config.modes)
 						config.midround_antag[mode_name] = 1
 					else
@@ -555,7 +555,7 @@ var/bot_ip
 					var/prob_value = null
 
 					if(prob_pos)
-						prob_name = lowertext(copytext(value, 1, prob_pos))
+						prob_name = rlowertext(copytext(value, 1, prob_pos))
 						prob_value = copytext(value, prob_pos + 1)
 						if(prob_name in config.modes)
 							config.probabilities[prob_name] = text2num(prob_value)
@@ -607,7 +607,7 @@ var/bot_ip
 				if("join_with_mutant_race")
 					config.mutant_races				= 1
 				if("roundstart_races")
-					var/race_id = lowertext(value)
+					var/race_id = rlowertext(value)
 					for(var/species_id in species_list)
 						if(species_id == race_id)
 							roundstart_races += species_list[species_id]
@@ -669,10 +669,10 @@ var/bot_ip
 		var/data = null
 
 		if(pos)
-			command = lowertext(copytext(t, 1, pos))
+			command = rlowertext(copytext(t, 1, pos))
 			data = copytext(t, pos + 1)
 		else
-			command = lowertext(t)
+			command = rlowertext(t)
 
 		if(!command)
 			continue
@@ -719,10 +719,10 @@ var/bot_ip
 		var/value = null
 
 		if(pos)
-			name = lowertext(copytext(t, 1, pos))
+			name = rlowertext(copytext(t, 1, pos))
 			value = copytext(t, pos + 1)
 		else
-			name = lowertext(t)
+			name = rlowertext(t)
 
 		if(!name)
 			continue

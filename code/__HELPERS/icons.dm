@@ -620,7 +620,7 @@ world
 
 //Used in the OLD chem colour mixing algorithm
 /proc/GetColors(hex)
-	hex = uppertext(hex)
+	hex = ruppertext(hex)
 	// No alpha set? Default to full alpha.
 	if(length(hex) == 7)
 		hex += "FF"
@@ -866,9 +866,9 @@ The _flatIcons list is a cache for generated icon files.
 	if(!letter)
 		letter = copytext(A.name, 1, 2)
 		if(uppercase == 1)
-			letter = uppertext(letter)
+			letter = ruppertext(letter)
 		else if(uppercase == -1)
-			letter = lowertext(letter)
+			letter = rlowertext(letter)
 
 	var/image/text_image = new(loc = A)
 	text_image.maptext = "<font size = 4>[letter]</font>"

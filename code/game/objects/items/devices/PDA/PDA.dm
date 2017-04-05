@@ -407,7 +407,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 				var/t = input(U, "Please enter new ringtone", name, ttone) as text
 				if(in_range(src, U) && loc == U)
 					if(t)
-						if(hidden_uplink && (trim(lowertext(t)) == trim(lowertext(lock_code))))
+						if(hidden_uplink && (trim(rlowertext(t)) == trim(rlowertext(lock_code))))
 							hidden_uplink.interact(U)
 							U << "The PDA softly beeps."
 							U << browse(null, "window=pda")
@@ -847,7 +847,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 		note = replacetext(note, "<li>", "\[*\]")
 		note = replacetext(note, "<ul>", "\[list\]")
 		note = replacetext(note, "</ul>", "\[/list\]")
-		note = html_encode(note)
+		note = rhtml_encode(note)
 		notescanned = 1
 		user << "<span class='notice'>Paper scanned. Saved to PDA's notekeeper.</span>" //concept of scanning paper copyright brainoblivion 2009
 

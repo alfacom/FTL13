@@ -605,7 +605,7 @@ Turf and target are seperate in case you want to teleport some distance from a t
 //Takes: Anything that could possibly have variables and a varname to check.
 //Returns: 1 if found, 0 if not.
 /proc/hasvar(datum/A, varname)
-	if(A.vars.Find(lowertext(varname)))
+	if(A.vars.Find(rlowertext(varname)))
 		return 1
 	else
 		return 0
@@ -1508,7 +1508,7 @@ proc/pick_closest_path(value)
 	var/list/jobs = list()
 	var/list/job_count = list()
 	for(var/datum/mind/M in ticker.minds)
-		var/T = lowertext(M.assigned_role)
+		var/T = rlowertext(M.assigned_role)
 		jobs[T] = M.current
 		job_count[T]++ //count how many of this job was found so we only show link for singular jobs
 
@@ -1528,7 +1528,7 @@ proc/pick_closest_path(value)
 						if(!found)
 							found = forenames[word]
 					if(!found)
-						var/T = lowertext(original_word)
+						var/T = rlowertext(original_word)
 						if(T == "cap") T = "captain"
 						if(T == "hop") T = "head of personnel"
 						if(T == "cmo") T = "chief medical officer"

@@ -104,7 +104,7 @@
 /mob/living/carbon/activate_hand(selhand) //0 or "r" or "right" for right hand; 1 or "l" or "left" for left hand.
 
 	if(istext(selhand))
-		selhand = lowertext(selhand)
+		selhand = rlowertext(selhand)
 
 		if(selhand == "right" || selhand == "r")
 			selhand = 0

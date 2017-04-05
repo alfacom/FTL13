@@ -276,7 +276,7 @@
 
 			var/special_role_text
 			if(traitor.special_role)
-				special_role_text = lowertext(traitor.special_role)
+				special_role_text = rlowertext(traitor.special_role)
 			else
 				special_role_text = "antagonist"
 

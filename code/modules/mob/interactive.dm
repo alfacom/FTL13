@@ -545,7 +545,7 @@
 
 /mob/living/carbon/human/interactive/Hear(message, atom/movable/speaker, message_langs, raw_message, radio_freq, list/spans)
 	if(speaker != src)
-		knownStrings |= html_decode(raw_message)
+		knownStrings |= rhtml_decode(raw_message)
 	..()
 
 /mob/living/carbon/human/interactive/proc/doProcess()

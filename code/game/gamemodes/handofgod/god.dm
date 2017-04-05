@@ -260,7 +260,7 @@
 			dat += "<center><B>[capitalize(t)]</B></center><BR>"
 			var/imgstate = initial(apath.autocolours) ? "[initial(apath.icon_state)]-[side]" : "[initial(apath.icon_state)]"
 			var/icon/I = icon('icons/obj/hand_of_god_structures.dmi',imgstate)
-			var/img_component = lowertext(t)
+			var/img_component = rlowertext(t)
 			//I hate byond, but atleast it autocaches these so it's only 1*number_of_structures worth of actual calls
 			user << browse_rsc(I,"hog_structure-[img_component].png")
 			dat += "<center><img src='hog_structure-[img_component].png' height=64 width=64></center>"
@@ -279,7 +279,7 @@
 			var/obj/structure/divine/trap/T = global_handofgod_traptypes[t]
 			dat += "<center><B>[capitalize(t)]</B></center><BR>"
 			var/icon/I = icon('icons/obj/hand_of_god_structures.dmi',"[initial(T.icon_state)]")
-			var/img_component = lowertext(t)
+			var/img_component = rlowertext(t)
 			user << browse_rsc(I,"hog_trap-[img_component].png")
 			dat += "<center><img src='hog_trap-[img_component].png' height=64 width=64></center>"
 			dat += "Description: [initial(T.desc)]<BR>"
